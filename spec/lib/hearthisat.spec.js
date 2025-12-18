@@ -1,5 +1,8 @@
 const Hearthisat = require('../../lib/hearthisat');
 
 describe('Hearthisat', () => {
-	const hearthisat = new Hearthisat();
+	it('should be instantiable', () => {
+		const hearthisat = new Hearthisat();
+		expect(hearthisat).toBeDefined();
+	});
 });
