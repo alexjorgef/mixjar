@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>lib/mixcloud.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Hearthisat.html">Hearthisat</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Hearthisat.html#all_genres">all_genres</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Hearthisat.html#feed_popular_new">feed_popular_new</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Hearthisat.html#genre_tracks">genre_tracks</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Hearthisat.html#playlist_tracks">playlist_tracks</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Hearthisat.html#search">search</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Hearthisat.html#track_detail">track_detail</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Hearthisat.html#user">user</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Hearthisat.html#user_tracks">user_tracks</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Mixcloud.html">Mixcloud</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#city">city</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#discover">discover</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#discover_latest">discover_latest</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#discover_popular">discover_popular</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#embed">embed</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#favorite">favorite</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#follow">follow</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#listen_later">listen_later</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#me">me</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#obtain_access_token">obtain_access_token</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#oembed">oembed</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#repost">repost</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#search">search</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#show">show</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#tag">tag</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#tag_and_city">tag_and_city</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#undo_favorite">undo_favorite</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#undo_listen_later">undo_listen_later</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#undo_repost">undo_repost</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#unfollow">unfollow</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#user">user</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#user_cloudcasts">user_cloudcasts</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#user_comments">user_comments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#user_favorites">user_favorites</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#user_feed">user_feed</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#user_followers">user_followers</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#user_following">user_following</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#user_listens">user_listens</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#user_playlist_cloudcasts">user_playlist_cloudcasts</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Mixcloud.html#user_playlists">user_playlists</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#asCallback">asCallback</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#asPromise">asPromise</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">lib/mixcloud.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const {
+	getMetadataValue,
+	getURL,
+	getRequest,
+	postRequest,
+	deleteRequest,
+	filterObject,
+	FunctionBuilder,
+	configs
+} = require('../utils');
+
+const {
+	api,
+	url,
+	params
+} = configs();
+
+class Paging {
+
+	constructor(limit = null, offset = null, since = null, until = null) {
+		this.limit = limit;
+		this.offset = offset;
+		this.since = since;
+		this.until = until;
+	}
+}
+
+/**
+ * Endpoints for mixcloud
+ * @class
+ */
+class Mixcloud {
+
+	/**
+	 * Return a new Mixcloud instance
+	 * @param {String} access_token
+	 */
+	constructor(access_token = '') {
+		this.access_token = access_token;
+	}
+
+	/**
+	 * Get Current User Data
+	 * @param {Boolean} metadata
+	 * @param {Boolean|Number} metadata
+	 * @param {String} callback
+	 */
+	me(metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL('me', api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Search for show, user or tag
+	 * @param {String} q
+	 * @param {('upload' | 'user' | 'tag')} type
+	 * @param {Paging} paging
+	 * @param {Boolean|Number} metadata
+	 * @param {String} callback
+	 */
+	search(
+		q,
+		type = 'upload',
+		paging = null,
+		metadata = params.mixcloud.metadata,
+		callback = params.mixcloud.callback
+	) {
+
+		const qParams = filterObject({
+			q,
+			type,
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			callback,
+			...paging,
+		});
+
+		return FunctionBuilder(getRequest(getURL('search', api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get show
+	 * @param {String} username
+	 * @param {String} title
+	 * @param {Boolean|Number} metadata
+	 * @param {String} callback
+	 */
+	show(username, title, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		username = username || '';
+		title = title || '';
+
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			callback,
+		});
+
+		return FunctionBuilder(getRequest(getURL(`${username}/${title}`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Search tag
+	 * @param {String} tag
+	 * @param {Paging} paging
+	 * @param {Boolean|Number} metadata
+	 * @param {String} callback
+	 */
+	tag(tag, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const basepath = `/discover/${tag || ''}`;
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(basepath, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Search by city
+	 * @param {String} city
+	 * @param {Paging} paging
+	 * @param {Boolean|Number} metadata
+	 * @param {String} callback
+	 */
+	city(city, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const basepath = `/discover/city:${city || ''}`;
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(basepath, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Search by city and tag
+	 * @param {String} tag
+	 * @param {String} city
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	tag_and_city(tag, city, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const basepath = `/discover/${tag || ''}+city:${city || ''}`;
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(basepath, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Discover shows
+	 * @param {String} q
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	discover(q, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(`/discover/${q}`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Discover latest shows
+	 * @param {String} q
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	discover_latest(q, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(`/discover/${q}/latest`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Discover popular shows
+	 * @param {String} q
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	discover_popular(q, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(`/discover/${q}/popular`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get user
+	 * @param {String} username
+	 * @param {Boolean|Number} metadata
+	 * @param {String} callback
+	 */
+	user(username, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(username || '', api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get user cloudcasts
+	 * @param {String} username
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	user_cloudcasts(username, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(`/${username || ''}/cloudcasts/`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get user comments
+	 * @param {String} username
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	user_comments(username, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(`/${username || ''}/comments/`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get user favorites
+	 * @param {String} username
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	user_favorites(username, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(`/${username || ''}/favorites/`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get user feed
+	 * @param {String} username
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	user_feed(username, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(`/${username || ''}/feed/`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get user followers
+	 * @param {String} username
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	user_followers(username, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(`/${username || ''}/followers/`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get user following
+	 * @param {String} username
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	user_following(username, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(`/${username || ''}/following/`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get user listens
+	 * @param {String} username
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	user_listens(username, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(`/${username || ''}/listens/`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get user playlists
+	 * @param {String} username
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	user_playlists(username, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(`/${username || ''}/playlists/`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get one user playlist
+	 * @param {String} username
+	 * @param {String} slug
+	 * @param {Paging} paging
+	 * @param {Boolean} metadata
+	 * @param {String} callback
+	 */
+	user_playlist_cloudcasts(username, slug, paging = null, metadata = params.mixcloud.metadata, callback = params.mixcloud.callback) {
+		username = username || '';
+		slug = slug || '';
+
+		const qParams = filterObject({
+			metadata: getMetadataValue(metadata),
+			access_token: this.access_token,
+			...paging,
+			callback,
+		});
+		return FunctionBuilder(getRequest(getURL(`/${username}/playlists/${slug}/cloudcasts/`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get access token
+	 * @param {String} client_id
+	 * @param {String} redirect_uri
+	 * @param {String} client_secret
+	 * @param {String} oauth_code
+	 * @param {String} callback
+	 */
+	obtain_access_token(client_id, redirect_uri, client_secret, oauth_code, callback = '') {
+		const qParams = {
+			callback,
+			client_id,
+			redirect_uri: encodeURIComponent(decodeURIComponent(redirect_uri || '')),
+			client_secret,
+			code: oauth_code,
+		};
+		return FunctionBuilder(getRequest(getURL('/oauth/access_token', url.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get embed html/json
+	 * @param {String} username
+	 * @param {String} title
+	 * @param {Boolean} is_json
+	 * @param {String} callback
+	 * @param {String} width
+	 * @param {String} height
+	 * @param {String} color
+	 */
+	embed(username, title, is_json = true, callback = '', width = '', height = '', color = '') {
+		const basepath = `/${username || ''}/${title || ''}/${is_json ? 'embed-json' : 'embed-html'}`;
+		const qParams = {
+			callback,
+			width,
+			height,
+			color,
+		};
+
+		return FunctionBuilder(getRequest(getURL(basepath, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Get oembed
+	 * @param {String} username
+	 * @param {String} title
+	 * @param {String} callback
+	 */
+	oembed(username, title, callback = '') {
+		const basepath = `/${username || ''}/${title || ''}`;
+		const qParams = {
+			url: encodeURIComponent(decodeURIComponent(getURL(basepath, url.mixcloud))),
+			format: 'json',
+		};
+		return FunctionBuilder(getRequest(getURL('oembed', api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Follow a user
+	 * @param {String} username
+	 * @param {String} callback
+	 */
+	follow(username, callback = '') {
+		const qParams = {
+			callback,
+			access_token: this.access_token,
+		};
+		return FunctionBuilder(postRequest(getURL(`/${username}/follow`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Unfollow a user
+	 * @param {String} username
+	 * @param {String} callback
+	 */
+	unfollow(username, callback = '') {
+		const qParams = {
+			callback,
+			access_token: this.access_token,
+		};
+		return FunctionBuilder(deleteRequest(getURL(`/${username}/follow`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Favorite a show
+	 * @param {String} username
+	 * @param {String} title
+	 * @param {String} callback
+	 */
+	favorite(username, title, callback = '') {
+		const qParams = {
+			callback,
+			access_token: this.access_token,
+		};
+		return FunctionBuilder(postRequest(getURL(`/${username}/${title}/favorite`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Remove a show from favorites
+	 * @param {String} username
+	 * @param {String} title
+	 * @param {String} callback
+	 */
+	undo_favorite(username, title, callback = '') {
+		const qParams = {
+			callback,
+			access_token: this.access_token,
+		};
+		return FunctionBuilder(deleteRequest(getURL(`/${username}/${title}/favorite`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Repost a show
+	 * @param {String} username
+	 * @param {String} title
+	 * @param {String} callback
+	 */
+	repost(username, title, callback = '') {
+		const qParams = {
+			callback,
+			access_token: this.access_token,
+		};
+		return FunctionBuilder(postRequest(getURL(`/${username}/${title}/repost`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Remove a reposted show
+	 * @param {String} username
+	 * @param {String} title
+	 * @param {String} callback
+	 */
+	undo_repost(username, title, callback = '') {
+		const qParams = {
+			callback,
+			access_token: this.access_token,
+		};
+		return FunctionBuilder(deleteRequest(getURL(`/${username}/${title}/repost`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Add show to listen later
+	 * @param {String} username
+	 * @param {String} title
+	 * @param {String} callback
+	 */
+	listen_later(username, title, callback = '') {
+		const qParams = {
+			callback,
+			access_token: this.access_token,
+		};
+		return FunctionBuilder(postRequest(getURL(`/${username}/${title}/listen-later`, api.mixcloud, qParams)));
+	}
+
+	/**
+	 * Remove show from listen later
+	 * @param {String} username
+	 * @param {String} title
+	 * @param {String} callback
+	 */
+	undo_listen_later(username, title, callback = '') {
+		const qParams = {
+			callback,
+			access_token: this.access_token,
+		};
+		return FunctionBuilder(deleteRequest(getURL(`/${username}/${title}/listen-later`, api.mixcloud, qParams)));
+	}
+
+	// /**
+	//  * Upload a show
+	//  * @param {String} username
+	//  * @param {String} title
+	//  * @param {String} callback
+	//  */
+	// upload(username, title, callback = '') {
+	// 	const qParams = {
+	// 		callback,
+	// 		access_token: this.access_token,
+	// 	};
+	// 	return postRequest(getURL('/upload', api.mixcloud, qParams));
+	// }
+}
+
+module.exports = Mixcloud;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.9</a> on Sun Jan 23 2022 16:04:58 GMT+0300 (East Africa Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
