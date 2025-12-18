@@ -1,41 +1,30 @@
-const unirest = require('unirest');
+const request = async (method, uri, headers = {}, body = null) => {
+    const options = {
+        method,
+        headers: { 'Content-Type': 'application/json', ...headers },
+    };
 
-const request = (method, uri, headers = null, body = null) => new Promise((resolve, reject) => unirest(
-	method,
-	uri,
-	headers,
-	body,
-	(response) => {
-		const filtered_response = (obj) => {
-			let result = {};
-			if (obj && obj.body) {
-				const objectBody = obj.body;
-				if (typeof objectBody === 'object') {
-					result = objectBody;
-				} else {
-					try {
-						result = JSON.parse(objectBody);
-					} catch (ignored) {
-						result = {
-							message_body: objectBody
-						};
-					}
-				}
-			}
+    if (body) {
+        options.body = JSON.stringify(body);
+    }
 
-			return result;
-		};
+    const response = await fetch(uri, options);
 
-		if (!response) {
-			reject(response);
-		}
+    const parseBody = async (res) => {
+        try {
+            return await res.json();
+        } catch {
+            const text = await res.text();
+            return { message_body: text };
+        }
+    };
 
-		if (response.ok) {
-			resolve(filtered_response(response));
-		} else {
-			reject(filtered_response(response));
-		}
-	}));
+    if (response.ok) {
+        return parseBody(response);
+    } else {
+        throw await parseBody(response);
+    }
+};
 
 module.exports = {
 

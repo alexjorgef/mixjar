@@ -1,6 +1,6 @@
 {
   "name": "@alexjorgef/mixjar",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "API Wrapper for mixcloud and hearthisat",
   "main": "index.js",
   "author": "Jan Ndungu",
@@ -24,9 +24,7 @@
     "lint:fix": "eslint **/*.js --fix",
     "test": "node node_modules/jasmine/bin/jasmine"
   },
-  "dependencies": {
-    "unirest": "^0.6.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^8.7.0",
     "eslint-config-google": "^0.14.0",
